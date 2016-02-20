@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turmp-field.png" id="5tJ-0z-OeN">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="600"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UkO-Fc-cEH">
+                                <rect key="frame" x="183" y="236" width="165" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <state key="normal" title="ゲーム開始" backgroundImage="bntBackground.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gfO-gE-jEF" kind="modal" id="lXF-6D-cnZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="七並べ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rSD-VC-GKy">
+                                <rect key="frame" x="217" y="80" width="96" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.73333333333332" y="291.57333333333332"/>
+        </scene>
+        <!--Trump View Controller-->
+        <scene sceneID="SGY-4R-Zal">
+            <objects>
+                <viewController storyboardIdentifier="TrumpView" id="gfO-gE-jEF" customClass="TrumpViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bjm-0N-e90">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turmp-field.png" id="CgQ-nI-CNF">
+                                <rect key="frame" x="-284" y="-160" width="1136" height="640"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="SfW-NR-JNi">
+                                <rect key="frame" x="517" y="171" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="8ps-FJ-ieV">
+                                <rect key="frame" x="475" y="171" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="ptj-kA-xdf">
+                                <rect key="frame" x="433" y="171" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="cjd-Gh-Zvs">
+                                <rect key="frame" x="391" y="171" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="kr1-DZ-fmg">
+                                <rect key="frame" x="348" y="171" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="59Y-Kd-Ve5">
+                                <rect key="frame" x="306" y="171" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s07.png" id="Keu-Km-1Jv">
+                                <rect key="frame" x="264" y="171" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="bQp-8H-y5K">
+                                <rect key="frame" x="222" y="171" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="CJs-At-8PV">
+                                <rect key="frame" x="180" y="171" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="qhV-Fl-ZZb">
+                                <rect key="frame" x="138" y="171" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="U9x-Dl-9lS">
+                                <rect key="frame" x="94" y="171" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="scB-WC-lcl">
+                                <rect key="frame" x="51" y="171" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="CNc-0k-voN">
+                                <rect key="frame" x="7" y="171" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="Viw-hz-x7q">
+                                <rect key="frame" x="517" y="134" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="BLJ-cg-wry">
+                                <rect key="frame" x="475" y="134" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="IpK-cB-I2d">
+                                <rect key="frame" x="433" y="134" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="asO-HX-3ok">
+                                <rect key="frame" x="391" y="134" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="wrJ-Ln-xG3">
+                                <rect key="frame" x="348" y="134" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="7dv-IO-MwD">
+                                <rect key="frame" x="306" y="134" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h07.png" id="SVt-Xf-4rt">
+                                <rect key="frame" x="264" y="134" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="Aff-su-vNq">
+                                <rect key="frame" x="222" y="134" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="B4j-pZ-UWX">
+                                <rect key="frame" x="180" y="134" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="6wH-HC-emc">
+                                <rect key="frame" x="138" y="134" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="1LE-4g-wIx">
+                                <rect key="frame" x="94" y="134" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="zt8-To-a1i">
+                                <rect key="frame" x="51" y="134" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="KVa-6j-xTX">
+                                <rect key="frame" x="517" y="95" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="xOY-KV-ZU7">
+                                <rect key="frame" x="475" y="95" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="wDH-bZ-iFB">
+                                <rect key="frame" x="433" y="95" width="40" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="zcy-g8-9Rp">
+                                <rect key="frame" x="391" y="95" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="mMK-OY-Ye4">
+                                <rect key="frame" x="348" y="95" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="ga3-QE-cpM">
+                                <rect key="frame" x="306" y="95" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d07.png" id="93y-3H-uBA">
+                                <rect key="frame" x="264" y="95" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="Mip-uP-V2N">
+                                <rect key="frame" x="222" y="95" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="JF7-Fw-pzN">
+                                <rect key="frame" x="180" y="95" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="k2c-Jx-99s">
+                                <rect key="frame" x="138" y="95" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="2w7-Fv-Tiv">
+                                <rect key="frame" x="94" y="95" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="ocD-0y-O7O">
+                                <rect key="frame" x="51" y="95" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="szL-uv-WkR">
+                                <rect key="frame" x="517" y="61" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="63K-qa-RuP">
+                                <rect key="frame" x="475" y="61" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="PxS-5t-aor">
+                                <rect key="frame" x="433" y="61" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="NtY-fR-NKF">
+                                <rect key="frame" x="391" y="61" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="17x-qw-vgI">
+                                <rect key="frame" x="348" y="61" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="aqY-Wk-pgj">
+                                <rect key="frame" x="306" y="61" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c07.png" id="Jto-mp-94a">
+                                <rect key="frame" x="264" y="61" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="PLf-UJ-bRf">
+                                <rect key="frame" x="222" y="61" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="mT5-Mf-Kkk">
+                                <rect key="frame" x="180" y="61" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="Ca0-Zd-QNu">
+                                <rect key="frame" x="138" y="61" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="tPY-1U-MFh">
+                                <rect key="frame" x="94" y="61" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="uLq-QF-ABe">
+                                <rect key="frame" x="51" y="61" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="I5i-lc-xsb">
+                                <rect key="frame" x="7" y="242" width="45" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="c01.png"/>
+                                <connections>
+                                    <action selector="selectHands:" destination="gfO-gE-jEF" eventType="touchUpInside" id="biS-BC-Nf0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FHu-ZG-5AO">
+                                <rect key="frame" x="35" y="242" width="45" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="c01.png"/>
+                                <connections>
+                                    <action selector="selectHands:" destination="gfO-gE-jEF" eventType="touchUpInside" id="9T0-Gu-Gh7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Bb-Rh-wgO">
+                                <rect key="frame" x="64" y="242" width="45" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="c01.png"/>
+                                <connections>
+                                    <action selector="selectHands:" destination="gfO-gE-jEF" eventType="touchUpInside" id="JJ1-BP-bxc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Iz1-gC-bTf">
+                                <rect key="frame" x="93" y="242" width="45" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="c01.png"/>
+                                <connections>
+                                    <action selector="selectHands:" destination="gfO-gE-jEF" eventType="touchUpInside" id="FeG-G3-CRJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cp9-X1-eOP">
+                                <rect key="frame" x="123" y="242" width="45" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="c01.png"/>
+                                <connections>
+                                    <action selector="selectHands:" destination="gfO-gE-jEF" eventType="touchUpInside" id="1m0-RY-MAK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2B9-f2-NP4">
+                                <rect key="frame" x="153" y="242" width="45" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="c01.png"/>
+                                <connections>
+                                    <action selector="selectHands:" destination="gfO-gE-jEF" eventType="touchUpInside" id="TIX-Yj-iwC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="je6-Qm-lfa">
+                                <rect key="frame" x="182" y="242" width="45" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="c01.png"/>
+                                <connections>
+                                    <action selector="selectHands:" destination="gfO-gE-jEF" eventType="touchUpInside" id="Crw-8v-bpc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="f8X-GS-39Q">
+                                <rect key="frame" x="212" y="242" width="45" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="c01.png"/>
+                                <connections>
+                                    <action selector="selectHands:" destination="gfO-gE-jEF" eventType="touchUpInside" id="fN9-St-Zdm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="J5Q-jo-ydQ">
+                                <rect key="frame" x="241" y="242" width="45" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="c01.png"/>
+                                <connections>
+                                    <action selector="selectHands:" destination="gfO-gE-jEF" eventType="touchUpInside" id="ou1-JM-gqC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fOH-l0-u4r">
+                                <rect key="frame" x="271" y="242" width="45" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="c01.png"/>
+                                <connections>
+                                    <action selector="selectHands:" destination="gfO-gE-jEF" eventType="touchUpInside" id="Fik-DN-3Yb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rPe-bn-a5e">
+                                <rect key="frame" x="301" y="242" width="45" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="c01.png"/>
+                                <connections>
+                                    <action selector="selectHands:" destination="gfO-gE-jEF" eventType="touchUpInside" id="e7Z-vR-NpT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HKM-mK-18L">
+                                <rect key="frame" x="331" y="242" width="45" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="c01.png"/>
+                                <connections>
+                                    <action selector="selectHands:" destination="gfO-gE-jEF" eventType="touchUpInside" id="8F7-HY-RDC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0ow-qf-w8I">
+                                <rect key="frame" x="395" y="266" width="162" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="パスする" backgroundImage="bntBackground.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="passBtn:" destination="gfO-gE-jEF" eventType="touchUpInside" id="Zke-vW-Emb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4回パスできます。" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xus-XK-47C">
+                                <rect key="frame" x="384" y="239" width="173" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="qle-d5-15l">
+                                <rect key="frame" x="7" y="134" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="8SG-cH-Elw">
+                                <rect key="frame" x="7" y="95" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearCard.png" id="VRJ-HM-TmW">
+                                <rect key="frame" x="7" y="61" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ナカムラ1の手札:12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="db1-Rn-i84">
+                                <rect key="frame" x="7" y="23" width="160" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ナカムラ2の手札:12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dyK-fg-rqQ">
+                                <rect key="frame" x="170" y="23" width="160" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ナカムラ3の手札:12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KmJ-Ke-W8y">
+                                <rect key="frame" x="332" y="23" width="160" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="c01" destination="VRJ-HM-TmW" id="B5d-SQ-LN2"/>
+                        <outlet property="c02" destination="uLq-QF-ABe" id="1wk-yE-V6c"/>
+                        <outlet property="c03" destination="tPY-1U-MFh" id="6Hl-zN-5Vg"/>
+                        <outlet property="c04" destination="Ca0-Zd-QNu" id="qks-4D-qWo"/>
+                        <outlet property="c05" destination="mT5-Mf-Kkk" id="n7h-eY-KiU"/>
+                        <outlet property="c06" destination="PLf-UJ-bRf" id="aaI-b3-Cqg"/>
+                        <outlet property="c07" destination="Jto-mp-94a" id="YbO-Kb-euk"/>
+                        <outlet property="c08" destination="aqY-Wk-pgj" id="FRG-qB-jnR"/>
+                        <outlet property="c09" destination="17x-qw-vgI" id="X7Z-Es-hKL"/>
+                        <outlet property="c10" destination="NtY-fR-NKF" id="kMg-0k-HRH"/>
+                        <outlet property="c11" destination="PxS-5t-aor" id="XVL-OP-yTf"/>
+                        <outlet property="c12" destination="63K-qa-RuP" id="qee-hv-m8O"/>
+                        <outlet property="c13" destination="szL-uv-WkR" id="nrB-Xp-f3I"/>
+                        <outlet property="com1Label" destination="db1-Rn-i84" id="S3x-pT-1km"/>
+                        <outlet property="com2Label" destination="dyK-fg-rqQ" id="CNs-ih-5jF"/>
+                        <outlet property="com3Label" destination="KmJ-Ke-W8y" id="Ghp-yO-Av6"/>
+                        <outlet property="d01" destination="8SG-cH-Elw" id="yt8-Rw-Xeo"/>
+                        <outlet property="d02" destination="ocD-0y-O7O" id="mmR-PF-pJX"/>
+                        <outlet property="d03" destination="2w7-Fv-Tiv" id="gre-d7-hhd"/>
+                        <outlet property="d04" destination="k2c-Jx-99s" id="eRh-zO-wkb"/>
+                        <outlet property="d05" destination="JF7-Fw-pzN" id="pUY-x5-Xwp"/>
+                        <outlet property="d06" destination="Mip-uP-V2N" id="BHg-9T-acd"/>
+                        <outlet property="d07" destination="93y-3H-uBA" id="aiK-Lb-DxP"/>
+                        <outlet property="d08" destination="ga3-QE-cpM" id="pdi-Wy-bGh"/>
+                        <outlet property="d09" destination="mMK-OY-Ye4" id="x82-Vf-mHZ"/>
+                        <outlet property="d10" destination="zcy-g8-9Rp" id="6sk-RM-bEU"/>
+                        <outlet property="d11" destination="wDH-bZ-iFB" id="L33-Gw-vNh"/>
+                        <outlet property="d12" destination="xOY-KV-ZU7" id="IyQ-zh-ZEF"/>
+                        <outlet property="d13" destination="KVa-6j-xTX" id="YCg-m5-MDb"/>
+                        <outlet property="h01" destination="qle-d5-15l" id="scO-7e-V3H"/>
+                        <outlet property="h02" destination="zt8-To-a1i" id="81B-Uw-L5B"/>
+                        <outlet property="h03" destination="1LE-4g-wIx" id="DXf-PL-zi8"/>
+                        <outlet property="h04" destination="6wH-HC-emc" id="7lM-4c-A58"/>
+                        <outlet property="h05" destination="B4j-pZ-UWX" id="ksV-20-vqE"/>
+                        <outlet property="h06" destination="Aff-su-vNq" id="aER-eM-cLi"/>
+                        <outlet property="h07" destination="SVt-Xf-4rt" id="FmQ-7i-DYL"/>
+                        <outlet property="h08" destination="7dv-IO-MwD" id="GXD-7g-5Ne"/>
+                        <outlet property="h09" destination="wrJ-Ln-xG3" id="WaF-JN-lY5"/>
+                        <outlet property="h10" destination="asO-HX-3ok" id="TNR-D9-3P1"/>
+                        <outlet property="h11" destination="IpK-cB-I2d" id="Wjg-M6-GT2"/>
+                        <outlet property="h12" destination="BLJ-cg-wry" id="rKS-kr-eRv"/>
+                        <outlet property="h13" destination="Viw-hz-x7q" id="7Aw-YK-Cwb"/>
+                        <outlet property="passLabel" destination="Xus-XK-47C" id="YsR-A0-4nS"/>
+                        <outlet property="s01" destination="CNc-0k-voN" id="AeZ-zK-ewA"/>
+                        <outlet property="s02" destination="scB-WC-lcl" id="NVY-fi-rMl"/>
+                        <outlet property="s03" destination="U9x-Dl-9lS" id="Foa-8K-NNp"/>
+                        <outlet property="s04" destination="qhV-Fl-ZZb" id="NO0-Sy-bzJ"/>
+                        <outlet property="s05" destination="CJs-At-8PV" id="mdc-ht-5iA"/>
+                        <outlet property="s06" destination="bQp-8H-y5K" id="6ED-V1-nS6"/>
+                        <outlet property="s07" destination="Keu-Km-1Jv" id="1if-kO-k53"/>
+                        <outlet property="s08" destination="59Y-Kd-Ve5" id="yfi-x2-WZV"/>
+                        <outlet property="s09" destination="kr1-DZ-fmg" id="TbB-4e-3M9"/>
+                        <outlet property="s10" destination="cjd-Gh-Zvs" id="Fro-lg-srp"/>
+                        <outlet property="s11" destination="ptj-kA-xdf" id="avv-fi-GMO"/>
+                        <outlet property="s12" destination="8ps-FJ-ieV" id="Dfk-Nz-J8r"/>
+                        <outlet property="s13" destination="SfW-NR-JNi" id="zHj-mE-8m7"/>
+                        <outlet property="yourhand01" destination="I5i-lc-xsb" id="tvV-6W-0Bn"/>
+                        <outlet property="yourhand02" destination="FHu-ZG-5AO" id="INe-aJ-cWf"/>
+                        <outlet property="yourhand03" destination="3Bb-Rh-wgO" id="u2b-un-kzw"/>
+                        <outlet property="yourhand04" destination="Iz1-gC-bTf" id="zf4-18-7UC"/>
+                        <outlet property="yourhand05" destination="cp9-X1-eOP" id="Teh-Kp-Anb"/>
+                        <outlet property="yourhand06" destination="2B9-f2-NP4" id="Q3g-9f-JX6"/>
+                        <outlet property="yourhand07" destination="je6-Qm-lfa" id="gkd-YV-5Kd"/>
+                        <outlet property="yourhand08" destination="f8X-GS-39Q" id="VhF-4j-XrN"/>
+                        <outlet property="yourhand09" destination="J5Q-jo-ydQ" id="nEl-c0-HHG"/>
+                        <outlet property="yourhand10" destination="fOH-l0-u4r" id="DKD-wQ-fM0"/>
+                        <outlet property="yourhand11" destination="rPe-bn-a5e" id="Kpk-yE-07R"/>
+                        <outlet property="yourhand12" destination="HKM-mK-18L" id="f9U-CM-Qtf"/>
+                        <segue destination="j3B-rm-OQV" kind="modal" identifier="gameoverSeuge" id="9ya-R5-Jhb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RDi-K2-wey" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="291"/>
+        </scene>
+        <!--Gameover View Controller-->
+        <scene sceneID="2P8-QU-A8e">
+            <objects>
+                <viewController id="j3B-rm-OQV" customClass="gameoverViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oaz-PH-qfo">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turmp-field.png" id="kWv-gT-zXQ">
+                                <rect key="frame" x="0.0" y="0.0" width="1136" height="640"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="結果発表" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fth-Wd-ZeA">
+                                <rect key="frame" x="236" y="30" width="96" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fae-Gl-btB">
+                                <rect key="frame" x="164" y="110" width="240" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="awr-Z5-hlQ">
+                                <rect key="frame" x="164" y="77" width="240" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="87b-tm-iJB">
+                                <rect key="frame" x="164" y="178" width="240" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pVU-yf-eFY">
+                                <rect key="frame" x="202" y="243" width="165" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="もう一度トライ！" backgroundImage="bntBackground.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Cdd-Jb-t8G" kind="unwind" unwindAction="returnMain:" id="YxT-8w-2S9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5oe-xz-NsQ">
+                                <rect key="frame" x="164" y="144" width="240" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="com1ResultLabel" destination="Fae-Gl-btB" id="Kj2-TC-uls"/>
+                        <outlet property="com2ResultLabel" destination="5oe-xz-NsQ" id="dih-Px-G3u"/>
+                        <outlet property="com3ResultLabel" destination="87b-tm-iJB" id="BV4-XY-vHm"/>
+                        <outlet property="yourResultLabel" destination="awr-Z5-hlQ" id="yx6-qn-VEV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dnh-Ae-KxM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Cdd-Jb-t8G" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="795"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bntBackground.png" width="240" height="120"/>
+        <image name="c01.png" width="200" height="300"/>
+        <image name="c07.png" width="200" height="300"/>
+        <image name="clearCard.png" width="50" height="75"/>
+        <image name="d07.png" width="200" height="300"/>
+        <image name="h07.png" width="200" height="300"/>
+        <image name="s07.png" width="200" height="300"/>
+        <image name="turmp-field.png" width="1136" height="640"/>
+    </resources>
+</document>

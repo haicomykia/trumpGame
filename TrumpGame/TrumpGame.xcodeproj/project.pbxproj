@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD37A0351BF7330D0075E4B7 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = AD37A0341BF7330D0075E4B7 /* Player.m */; };
+		AD46E0A01BF33EFC001141CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD46E09F1BF33EFC001141CA /* main.m */; };
+		AD46E0A31BF33EFC001141CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD46E0A21BF33EFC001141CA /* AppDelegate.m */; };
+		AD46E0A61BF33EFC001141CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD46E0A51BF33EFC001141CA /* ViewController.m */; };
+		AD46E0A91BF33EFC001141CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0A71BF33EFC001141CA /* Main.storyboard */; };
+		AD46E0AB1BF33EFC001141CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0AA1BF33EFC001141CA /* Assets.xcassets */; };
+		AD46E0AE1BF33EFC001141CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0AC1BF33EFC001141CA /* LaunchScreen.storyboard */; };
+		AD46E0B91BF33EFC001141CA /* TrumpGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD46E0B81BF33EFC001141CA /* TrumpGameTests.m */; };
+		AD46E0C41BF33EFC001141CA /* TrumpGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD46E0C31BF33EFC001141CA /* TrumpGameUITests.m */; };
+		AD46E0D31BF33F31001141CA /* TrumpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD46E0D21BF33F31001141CA /* TrumpViewController.m */; };
+		AD46E10F1BF37CB5001141CA /* c01.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0D71BF37CB5001141CA /* c01.png */; };
+		AD46E1101BF37CB5001141CA /* c02.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0D81BF37CB5001141CA /* c02.png */; };
+		AD46E1111BF37CB5001141CA /* c03.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0D91BF37CB5001141CA /* c03.png */; };
+		AD46E1121BF37CB5001141CA /* c04.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0DA1BF37CB5001141CA /* c04.png */; };
+		AD46E1131BF37CB5001141CA /* c05.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0DB1BF37CB5001141CA /* c05.png */; };
+		AD46E1141BF37CB5001141CA /* c06.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0DC1BF37CB5001141CA /* c06.png */; };
+		AD46E1151BF37CB5001141CA /* c07.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0DD1BF37CB5001141CA /* c07.png */; };
+		AD46E1161BF37CB5001141CA /* c08.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0DE1BF37CB5001141CA /* c08.png */; };
+		AD46E1171BF37CB5001141CA /* c09.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0DF1BF37CB5001141CA /* c09.png */; };
+		AD46E1181BF37CB5001141CA /* c10.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0E01BF37CB5001141CA /* c10.png */; };
+		AD46E1191BF37CB5001141CA /* c11.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0E11BF37CB5001141CA /* c11.png */; };
+		AD46E11A1BF37CB5001141CA /* c12.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0E21BF37CB5001141CA /* c12.png */; };
+		AD46E11B1BF37CB5001141CA /* c13.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0E31BF37CB5001141CA /* c13.png */; };
+		AD46E11C1BF37CB5001141CA /* d01.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0E41BF37CB5001141CA /* d01.png */; };
+		AD46E11D1BF37CB5001141CA /* d02.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0E51BF37CB5001141CA /* d02.png */; };
+		AD46E11E1BF37CB5001141CA /* d03.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0E61BF37CB5001141CA /* d03.png */; };
+		AD46E11F1BF37CB5001141CA /* d04.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0E71BF37CB5001141CA /* d04.png */; };
+		AD46E1201BF37CB5001141CA /* d05.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0E81BF37CB5001141CA /* d05.png */; };
+		AD46E1211BF37CB5001141CA /* d06.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0E91BF37CB5001141CA /* d06.png */; };
+		AD46E1221BF37CB5001141CA /* d07.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0EA1BF37CB5001141CA /* d07.png */; };
+		AD46E1231BF37CB5001141CA /* d08.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0EB1BF37CB5001141CA /* d08.png */; };
+		AD46E1241BF37CB5001141CA /* d09.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0EC1BF37CB5001141CA /* d09.png */; };
+		AD46E1251BF37CB5001141CA /* d10.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0ED1BF37CB5001141CA /* d10.png */; };
+		AD46E1261BF37CB5001141CA /* d11.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0EE1BF37CB5001141CA /* d11.png */; };
+		AD46E1271BF37CB5001141CA /* d12.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0EF1BF37CB5001141CA /* d12.png */; };
+		AD46E1281BF37CB5001141CA /* d13.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0F01BF37CB5001141CA /* d13.png */; };
+		AD46E1291BF37CB5001141CA /* h01.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0F11BF37CB5001141CA /* h01.png */; };
+		AD46E12A1BF37CB5001141CA /* h02.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0F21BF37CB5001141CA /* h02.png */; };
+		AD46E12B1BF37CB5001141CA /* h03.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0F31BF37CB5001141CA /* h03.png */; };
+		AD46E12C1BF37CB5001141CA /* h04.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0F41BF37CB5001141CA /* h04.png */; };
+		AD46E12D1BF37CB5001141CA /* h05.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0F51BF37CB5001141CA /* h05.png */; };
+		AD46E12E1BF37CB5001141CA /* h06.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0F61BF37CB5001141CA /* h06.png */; };
+		AD46E12F1BF37CB5001141CA /* h07.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0F71BF37CB5001141CA /* h07.png */; };
+		AD46E1301BF37CB5001141CA /* h08.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0F81BF37CB5001141CA /* h08.png */; };
+		AD46E1311BF37CB5001141CA /* h09.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0F91BF37CB5001141CA /* h09.png */; };
+		AD46E1321BF37CB5001141CA /* h10.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0FA1BF37CB5001141CA /* h10.png */; };
+		AD46E1331BF37CB5001141CA /* h11.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0FB1BF37CB5001141CA /* h11.png */; };
+		AD46E1341BF37CB5001141CA /* h12.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0FC1BF37CB5001141CA /* h12.png */; };
+		AD46E1351BF37CB5001141CA /* h13.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0FD1BF37CB5001141CA /* h13.png */; };
+		AD46E1361BF37CB5001141CA /* joker.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0FE1BF37CB5001141CA /* joker.png */; };
+		AD46E1371BF37CB5001141CA /* s01.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E0FF1BF37CB5001141CA /* s01.png */; };
+		AD46E1381BF37CB5001141CA /* s02.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E1001BF37CB5001141CA /* s02.png */; };
+		AD46E1391BF37CB5001141CA /* s03.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E1011BF37CB5001141CA /* s03.png */; };
+		AD46E13A1BF37CB5001141CA /* s04.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E1021BF37CB5001141CA /* s04.png */; };
+		AD46E13B1BF37CB5001141CA /* s05.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E1031BF37CB5001141CA /* s05.png */; };
+		AD46E13C1BF37CB5001141CA /* s06.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E1041BF37CB5001141CA /* s06.png */; };
+		AD46E13D1BF37CB5001141CA /* s07.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E1051BF37CB5001141CA /* s07.png */; };
+		AD46E13E1BF37CB5001141CA /* s08.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E1061BF37CB5001141CA /* s08.png */; };
+		AD46E13F1BF37CB5001141CA /* s09.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E1071BF37CB5001141CA /* s09.png */; };
+		AD46E1401BF37CB5001141CA /* s10.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E1081BF37CB5001141CA /* s10.png */; };
+		AD46E1411BF37CB5001141CA /* s11.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E1091BF37CB5001141CA /* s11.png */; };
+		AD46E1421BF37CB5001141CA /* s12.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E10A1BF37CB5001141CA /* s12.png */; };
+		AD46E1431BF37CB5001141CA /* s13.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E10B1BF37CB5001141CA /* s13.png */; };
+		AD46E1441BF37CB5001141CA /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = AD46E10C1BF37CB5001141CA /* Thumbs.db */; };
+		AD46E1451BF37CB5001141CA /* z01.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E10D1BF37CB5001141CA /* z01.png */; };
+		AD46E1461BF37CB5001141CA /* z02.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E10E1BF37CB5001141CA /* z02.png */; };
+		AD46E1481BF4ACE8001141CA /* turmp-field.png in Resources */ = {isa = PBXBuildFile; fileRef = AD46E1471BF4ACE8001141CA /* turmp-field.png */; };
+		AD5559361BF7F3A7000B8F37 /* clearCard.png in Resources */ = {isa = PBXBuildFile; fileRef = AD5559351BF7F3A7000B8F37 /* clearCard.png */; };
+		ADC400261BF8060E00D7A05F /* gameoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC400251BF8060E00D7A05F /* gameoverViewController.m */; };
+		ADC400271BF8276300D7A05F /* TrumpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD46E0D21BF33F31001141CA /* TrumpViewController.m */; };
+		ADC400291BF8311000D7A05F /* bntBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC400281BF8311000D7A05F /* bntBackground.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD46E0B51BF33EFC001141CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD46E0931BF33EFC001141CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD46E09A1BF33EFC001141CA;
+			remoteInfo = TrumpGame;
+		};
+		AD46E0C01BF33EFC001141CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD46E0931BF33EFC001141CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD46E09A1BF33EFC001141CA;
+			remoteInfo = TrumpGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD37A0331BF7330D0075E4B7 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		AD37A0341BF7330D0075E4B7 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		AD46E09B1BF33EFC001141CA /* TrumpGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrumpGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD46E09F1BF33EFC001141CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD46E0A11BF33EFC001141CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD46E0A21BF33EFC001141CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD46E0A41BF33EFC001141CA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AD46E0A51BF33EFC001141CA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AD46E0A81BF33EFC001141CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD46E0AA1BF33EFC001141CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD46E0AD1BF33EFC001141CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD46E0AF1BF33EFC001141CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD46E0B41BF33EFC001141CA /* TrumpGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrumpGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD46E0B81BF33EFC001141CA /* TrumpGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrumpGameTests.m; sourceTree = "<group>"; };
+		AD46E0BA1BF33EFC001141CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD46E0BF1BF33EFC001141CA /* TrumpGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrumpGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD46E0C31BF33EFC001141CA /* TrumpGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrumpGameUITests.m; sourceTree = "<group>"; };
+		AD46E0C51BF33EFC001141CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD46E0D11BF33F31001141CA /* TrumpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrumpViewController.h; sourceTree = "<group>"; };
+		AD46E0D21BF33F31001141CA /* TrumpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrumpViewController.m; sourceTree = "<group>"; };
+		AD46E0D71BF37CB5001141CA /* c01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c01.png; sourceTree = "<group>"; };
+		AD46E0D81BF37CB5001141CA /* c02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c02.png; sourceTree = "<group>"; };
+		AD46E0D91BF37CB5001141CA /* c03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c03.png; sourceTree = "<group>"; };
+		AD46E0DA1BF37CB5001141CA /* c04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c04.png; sourceTree = "<group>"; };
+		AD46E0DB1BF37CB5001141CA /* c05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c05.png; sourceTree = "<group>"; };
+		AD46E0DC1BF37CB5001141CA /* c06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c06.png; sourceTree = "<group>"; };
+		AD46E0DD1BF37CB5001141CA /* c07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c07.png; sourceTree = "<group>"; };
+		AD46E0DE1BF37CB5001141CA /* c08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c08.png; sourceTree = "<group>"; };
+		AD46E0DF1BF37CB5001141CA /* c09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c09.png; sourceTree = "<group>"; };
+		AD46E0E01BF37CB5001141CA /* c10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c10.png; sourceTree = "<group>"; };
+		AD46E0E11BF37CB5001141CA /* c11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c11.png; sourceTree = "<group>"; };
+		AD46E0E21BF37CB5001141CA /* c12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c12.png; sourceTree = "<group>"; };
+		AD46E0E31BF37CB5001141CA /* c13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c13.png; sourceTree = "<group>"; };
+		AD46E0E41BF37CB5001141CA /* d01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d01.png; sourceTree = "<group>"; };
+		AD46E0E51BF37CB5001141CA /* d02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d02.png; sourceTree = "<group>"; };
+		AD46E0E61BF37CB5001141CA /* d03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d03.png; sourceTree = "<group>"; };
+		AD46E0E71BF37CB5001141CA /* d04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d04.png; sourceTree = "<group>"; };
+		AD46E0E81BF37CB5001141CA /* d05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d05.png; sourceTree = "<group>"; };
+		AD46E0E91BF37CB5001141CA /* d06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d06.png; sourceTree = "<group>"; };
+		AD46E0EA1BF37CB5001141CA /* d07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d07.png; sourceTree = "<group>"; };
+		AD46E0EB1BF37CB5001141CA /* d08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d08.png; sourceTree = "<group>"; };
+		AD46E0EC1BF37CB5001141CA /* d09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d09.png; sourceTree = "<group>"; };
+		AD46E0ED1BF37CB5001141CA /* d10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d10.png; sourceTree = "<group>"; };
+		AD46E0EE1BF37CB5001141CA /* d11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d11.png; sourceTree = "<group>"; };
+		AD46E0EF1BF37CB5001141CA /* d12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d12.png; sourceTree = "<group>"; };
+		AD46E0F01BF37CB5001141CA /* d13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d13.png; sourceTree = "<group>"; };
+		AD46E0F11BF37CB5001141CA /* h01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h01.png; sourceTree = "<group>"; };
+		AD46E0F21BF37CB5001141CA /* h02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h02.png; sourceTree = "<group>"; };
+		AD46E0F31BF37CB5001141CA /* h03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h03.png; sourceTree = "<group>"; };
+		AD46E0F41BF37CB5001141CA /* h04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h04.png; sourceTree = "<group>"; };
+		AD46E0F51BF37CB5001141CA /* h05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h05.png; sourceTree = "<group>"; };
+		AD46E0F61BF37CB5001141CA /* h06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h06.png; sourceTree = "<group>"; };
+		AD46E0F71BF37CB5001141CA /* h07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h07.png; sourceTree = "<group>"; };
+		AD46E0F81BF37CB5001141CA /* h08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h08.png; sourceTree = "<group>"; };
+		AD46E0F91BF37CB5001141CA /* h09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h09.png; sourceTree = "<group>"; };
+		AD46E0FA1BF37CB5001141CA /* h10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h10.png; sourceTree = "<group>"; };
+		AD46E0FB1BF37CB5001141CA /* h11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h11.png; sourceTree = "<group>"; };
+		AD46E0FC1BF37CB5001141CA /* h12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h12.png; sourceTree = "<group>"; };
+		AD46E0FD1BF37CB5001141CA /* h13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h13.png; sourceTree = "<group>"; };
+		AD46E0FE1BF37CB5001141CA /* joker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joker.png; sourceTree = "<group>"; };
+		AD46E0FF1BF37CB5001141CA /* s01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s01.png; sourceTree = "<group>"; };
+		AD46E1001BF37CB5001141CA /* s02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s02.png; sourceTree = "<group>"; };
+		AD46E1011BF37CB5001141CA /* s03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s03.png; sourceTree = "<group>"; };
+		AD46E1021BF37CB5001141CA /* s04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s04.png; sourceTree = "<group>"; };
+		AD46E1031BF37CB5001141CA /* s05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s05.png; sourceTree = "<group>"; };
+		AD46E1041BF37CB5001141CA /* s06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s06.png; sourceTree = "<group>"; };
+		AD46E1051BF37CB5001141CA /* s07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s07.png; sourceTree = "<group>"; };
+		AD46E1061BF37CB5001141CA /* s08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s08.png; sourceTree = "<group>"; };
+		AD46E1071BF37CB5001141CA /* s09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s09.png; sourceTree = "<group>"; };
+		AD46E1081BF37CB5001141CA /* s10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s10.png; sourceTree = "<group>"; };
+		AD46E1091BF37CB5001141CA /* s11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s11.png; sourceTree = "<group>"; };
+		AD46E10A1BF37CB5001141CA /* s12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s12.png; sourceTree = "<group>"; };
+		AD46E10B1BF37CB5001141CA /* s13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s13.png; sourceTree = "<group>"; };
+		AD46E10C1BF37CB5001141CA /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
+		AD46E10D1BF37CB5001141CA /* z01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = z01.png; sourceTree = "<group>"; };
+		AD46E10E1BF37CB5001141CA /* z02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = z02.png; sourceTree = "<group>"; };
+		AD46E1471BF4ACE8001141CA /* turmp-field.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "turmp-field.png"; sourceTree = "<group>"; };
+		AD5559351BF7F3A7000B8F37 /* clearCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clearCard.png; sourceTree = "<group>"; };
+		ADC400241BF8060E00D7A05F /* gameoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gameoverViewController.h; path = ../gameoverViewController.h; sourceTree = "<group>"; };
+		ADC400251BF8060E00D7A05F /* gameoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gameoverViewController.m; path = ../gameoverViewController.m; sourceTree = "<group>"; };
+		ADC400281BF8311000D7A05F /* bntBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bntBackground.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD46E0981BF33EFC001141CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD46E0B11BF33EFC001141CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD46E0BC1BF33EFC001141CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD46E0921BF33EFC001141CA = {
+			isa = PBXGroup;
+			children = (
+				AD46E09D1BF33EFC001141CA /* TrumpGame */,
+				AD46E0B71BF33EFC001141CA /* TrumpGameTests */,
+				AD46E0C21BF33EFC001141CA /* TrumpGameUITests */,
+				AD46E09C1BF33EFC001141CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD46E09C1BF33EFC001141CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD46E09B1BF33EFC001141CA /* TrumpGame.app */,
+				AD46E0B41BF33EFC001141CA /* TrumpGameTests.xctest */,
+				AD46E0BF1BF33EFC001141CA /* TrumpGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD46E09D1BF33EFC001141CA /* TrumpGame */ = {
+			isa = PBXGroup;
+			children = (
+				ADC400241BF8060E00D7A05F /* gameoverViewController.h */,
+				ADC400251BF8060E00D7A05F /* gameoverViewController.m */,
+				AD46E0A11BF33EFC001141CA /* AppDelegate.h */,
+				AD46E0A21BF33EFC001141CA /* AppDelegate.m */,
+				AD46E0A41BF33EFC001141CA /* ViewController.h */,
+				AD46E0A51BF33EFC001141CA /* ViewController.m */,
+				AD46E0A71BF33EFC001141CA /* Main.storyboard */,
+				AD46E0D11BF33F31001141CA /* TrumpViewController.h */,
+				AD46E0D21BF33F31001141CA /* TrumpViewController.m */,
+				AD37A0331BF7330D0075E4B7 /* Player.h */,
+				AD37A0341BF7330D0075E4B7 /* Player.m */,
+				AD46E0AA1BF33EFC001141CA /* Assets.xcassets */,
+				AD46E0AC1BF33EFC001141CA /* LaunchScreen.storyboard */,
+				AD46E0AF1BF33EFC001141CA /* Info.plist */,
+				AD46E09E1BF33EFC001141CA /* Supporting Files */,
+			);
+			path = TrumpGame;
+			sourceTree = "<group>";
+		};
+		AD46E09E1BF33EFC001141CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADC400281BF8311000D7A05F /* bntBackground.png */,
+				AD46E0D71BF37CB5001141CA /* c01.png */,
+				AD46E0D81BF37CB5001141CA /* c02.png */,
+				AD46E0D91BF37CB5001141CA /* c03.png */,
+				AD46E0DA1BF37CB5001141CA /* c04.png */,
+				AD46E0DB1BF37CB5001141CA /* c05.png */,
+				AD46E0DC1BF37CB5001141CA /* c06.png */,
+				AD46E0DD1BF37CB5001141CA /* c07.png */,
+				AD46E0DE1BF37CB5001141CA /* c08.png */,
+				AD46E0DF1BF37CB5001141CA /* c09.png */,
+				AD5559351BF7F3A7000B8F37 /* clearCard.png */,
+				AD46E0E01BF37CB5001141CA /* c10.png */,
+				AD46E0E11BF37CB5001141CA /* c11.png */,
+				AD46E0E21BF37CB5001141CA /* c12.png */,
+				AD46E0E31BF37CB5001141CA /* c13.png */,
+				AD46E0E41BF37CB5001141CA /* d01.png */,
+				AD46E0E51BF37CB5001141CA /* d02.png */,
+				AD46E0E61BF37CB5001141CA /* d03.png */,
+				AD46E0E71BF37CB5001141CA /* d04.png */,
+				AD46E0E81BF37CB5001141CA /* d05.png */,
+				AD46E0E91BF37CB5001141CA /* d06.png */,
+				AD46E0EA1BF37CB5001141CA /* d07.png */,
+				AD46E0EB1BF37CB5001141CA /* d08.png */,
+				AD46E1471BF4ACE8001141CA /* turmp-field.png */,
+				AD46E0EC1BF37CB5001141CA /* d09.png */,
+				AD46E0ED1BF37CB5001141CA /* d10.png */,
+				AD46E0EE1BF37CB5001141CA /* d11.png */,
+				AD46E0EF1BF37CB5001141CA /* d12.png */,
+				AD46E0F01BF37CB5001141CA /* d13.png */,
+				AD46E0F11BF37CB5001141CA /* h01.png */,
+				AD46E0F21BF37CB5001141CA /* h02.png */,
+				AD46E0F31BF37CB5001141CA /* h03.png */,
+				AD46E0F41BF37CB5001141CA /* h04.png */,
+				AD46E0F51BF37CB5001141CA /* h05.png */,
+				AD46E0F61BF37CB5001141CA /* h06.png */,
+				AD46E0F71BF37CB5001141CA /* h07.png */,
+				AD46E0F81BF37CB5001141CA /* h08.png */,
+				AD46E0F91BF37CB5001141CA /* h09.png */,
+				AD46E0FA1BF37CB5001141CA /* h10.png */,
+				AD46E0FB1BF37CB5001141CA /* h11.png */,
+				AD46E0FC1BF37CB5001141CA /* h12.png */,
+				AD46E0FD1BF37CB5001141CA /* h13.png */,
+				AD46E0FE1BF37CB5001141CA /* joker.png */,
+				AD46E0FF1BF37CB5001141CA /* s01.png */,
+				AD46E1001BF37CB5001141CA /* s02.png */,
+				AD46E1011BF37CB5001141CA /* s03.png */,
+				AD46E1021BF37CB5001141CA /* s04.png */,
+				AD46E1031BF37CB5001141CA /* s05.png */,
+				AD46E1041BF37CB5001141CA /* s06.png */,
+				AD46E1051BF37CB5001141CA /* s07.png */,
+				AD46E1061BF37CB5001141CA /* s08.png */,
+				AD46E1071BF37CB5001141CA /* s09.png */,
+				AD46E1081BF37CB5001141CA /* s10.png */,
+				AD46E1091BF37CB5001141CA /* s11.png */,
+				AD46E10A1BF37CB5001141CA /* s12.png */,
+				AD46E10B1BF37CB5001141CA /* s13.png */,
+				AD46E10C1BF37CB5001141CA /* Thumbs.db */,
+				AD46E10D1BF37CB5001141CA /* z01.png */,
+				AD46E10E1BF37CB5001141CA /* z02.png */,
+				AD46E09F1BF33EFC001141CA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD46E0B71BF33EFC001141CA /* TrumpGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD46E0B81BF33EFC001141CA /* TrumpGameTests.m */,
+				AD46E0BA1BF33EFC001141CA /* Info.plist */,
+			);
+			path = TrumpGameTests;
+			sourceTree = "<group>";
+		};
+		AD46E0C21BF33EFC001141CA /* TrumpGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD46E0C31BF33EFC001141CA /* TrumpGameUITests.m */,
+				AD46E0C51BF33EFC001141CA /* Info.plist */,
+			);
+			path = TrumpGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD46E09A1BF33EFC001141CA /* TrumpGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD46E0C81BF33EFD001141CA /* Build configuration list for PBXNativeTarget "TrumpGame" */;
+			buildPhases = (
+				AD46E0971BF33EFC001141CA /* Sources */,
+				AD46E0981BF33EFC001141CA /* Frameworks */,
+				AD46E0991BF33EFC001141CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrumpGame;
+			productName = TrumpGame;
+			productReference = AD46E09B1BF33EFC001141CA /* TrumpGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD46E0B31BF33EFC001141CA /* TrumpGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD46E0CB1BF33EFD001141CA /* Build configuration list for PBXNativeTarget "TrumpGameTests" */;
+			buildPhases = (
+				AD46E0B01BF33EFC001141CA /* Sources */,
+				AD46E0B11BF33EFC001141CA /* Frameworks */,
+				AD46E0B21BF33EFC001141CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD46E0B61BF33EFC001141CA /* PBXTargetDependency */,
+			);
+			name = TrumpGameTests;
+			productName = TrumpGameTests;
+			productReference = AD46E0B41BF33EFC001141CA /* TrumpGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD46E0BE1BF33EFC001141CA /* TrumpGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD46E0CE1BF33EFD001141CA /* Build configuration list for PBXNativeTarget "TrumpGameUITests" */;
+			buildPhases = (
+				AD46E0BB1BF33EFC001141CA /* Sources */,
+				AD46E0BC1BF33EFC001141CA /* Frameworks */,
+				AD46E0BD1BF33EFC001141CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD46E0C11BF33EFC001141CA /* PBXTargetDependency */,
+			);
+			name = TrumpGameUITests;
+			productName = TrumpGameUITests;
+			productReference = AD46E0BF1BF33EFC001141CA /* TrumpGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD46E0931BF33EFC001141CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "group-b";
+				TargetAttributes = {
+					AD46E09A1BF33EFC001141CA = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					AD46E0B31BF33EFC001141CA = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = AD46E09A1BF33EFC001141CA;
+					};
+					AD46E0BE1BF33EFC001141CA = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = AD46E09A1BF33EFC001141CA;
+					};
+				};
+			};
+			buildConfigurationList = AD46E0961BF33EFC001141CA /* Build configuration list for PBXProject "TrumpGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD46E0921BF33EFC001141CA;
+			productRefGroup = AD46E09C1BF33EFC001141CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD46E09A1BF33EFC001141CA /* TrumpGame */,
+				AD46E0B31BF33EFC001141CA /* TrumpGameTests */,
+				AD46E0BE1BF33EFC001141CA /* TrumpGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD46E0991BF33EFC001141CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD46E1341BF37CB5001141CA /* h12.png in Resources */,
+				AD46E1431BF37CB5001141CA /* s13.png in Resources */,
+				AD46E1111BF37CB5001141CA /* c03.png in Resources */,
+				AD46E11B1BF37CB5001141CA /* c13.png in Resources */,
+				ADC400291BF8311000D7A05F /* bntBackground.png in Resources */,
+				AD46E0AE1BF33EFC001141CA /* LaunchScreen.storyboard in Resources */,
+				AD46E1131BF37CB5001141CA /* c05.png in Resources */,
+				AD46E0AB1BF33EFC001141CA /* Assets.xcassets in Resources */,
+				AD46E1451BF37CB5001141CA /* z01.png in Resources */,
+				AD46E13F1BF37CB5001141CA /* s09.png in Resources */,
+				AD46E12E1BF37CB5001141CA /* h06.png in Resources */,
+				AD46E1421BF37CB5001141CA /* s12.png in Resources */,
+				AD46E12B1BF37CB5001141CA /* h03.png in Resources */,
+				AD46E1251BF37CB5001141CA /* d10.png in Resources */,
+				AD46E1151BF37CB5001141CA /* c07.png in Resources */,
+				AD46E1311BF37CB5001141CA /* h09.png in Resources */,
+				AD46E1231BF37CB5001141CA /* d08.png in Resources */,
+				AD46E11E1BF37CB5001141CA /* d03.png in Resources */,
+				AD46E12A1BF37CB5001141CA /* h02.png in Resources */,
+				AD46E1261BF37CB5001141CA /* d11.png in Resources */,
+				AD46E1381BF37CB5001141CA /* s02.png in Resources */,
+				AD46E11D1BF37CB5001141CA /* d02.png in Resources */,
+				AD46E12D1BF37CB5001141CA /* h05.png in Resources */,
+				AD46E13B1BF37CB5001141CA /* s05.png in Resources */,
+				AD46E13A1BF37CB5001141CA /* s04.png in Resources */,
+				AD46E1391BF37CB5001141CA /* s03.png in Resources */,
+				AD46E1361BF37CB5001141CA /* joker.png in Resources */,
+				AD46E10F1BF37CB5001141CA /* c01.png in Resources */,
+				AD46E1461BF37CB5001141CA /* z02.png in Resources */,
+				AD46E1181BF37CB5001141CA /* c10.png in Resources */,
+				AD46E12C1BF37CB5001141CA /* h04.png in Resources */,
+				AD46E1271BF37CB5001141CA /* d12.png in Resources */,
+				AD46E1411BF37CB5001141CA /* s11.png in Resources */,
+				AD46E1441BF37CB5001141CA /* Thumbs.db in Resources */,
+				AD46E1301BF37CB5001141CA /* h08.png in Resources */,
+				AD46E1171BF37CB5001141CA /* c09.png in Resources */,
+				AD46E1481BF4ACE8001141CA /* turmp-field.png in Resources */,
+				AD46E1291BF37CB5001141CA /* h01.png in Resources */,
+				AD46E1351BF37CB5001141CA /* h13.png in Resources */,
+				AD46E13D1BF37CB5001141CA /* s07.png in Resources */,
+				AD46E11C1BF37CB5001141CA /* d01.png in Resources */,
+				AD46E1401BF37CB5001141CA /* s10.png in Resources */,
+				AD46E13C1BF37CB5001141CA /* s06.png in Resources */,
+				AD46E1211BF37CB5001141CA /* d06.png in Resources */,
+				AD46E1161BF37CB5001141CA /* c08.png in Resources */,
+				AD46E0A91BF33EFC001141CA /* Main.storyboard in Resources */,
+				AD46E13E1BF37CB5001141CA /* s08.png in Resources */,
+				AD46E1321BF37CB5001141CA /* h10.png in Resources */,
+				AD46E1331BF37CB5001141CA /* h11.png in Resources */,
+				AD5559361BF7F3A7000B8F37 /* clearCard.png in Resources */,
+				AD46E1141BF37CB5001141CA /* c06.png in Resources */,
+				AD46E1281BF37CB5001141CA /* d13.png in Resources */,
+				AD46E1201BF37CB5001141CA /* d05.png in Resources */,
+				AD46E1191BF37CB5001141CA /* c11.png in Resources */,
+				AD46E11A1BF37CB5001141CA /* c12.png in Resources */,
+				AD46E1221BF37CB5001141CA /* d07.png in Resources */,
+				AD46E1101BF37CB5001141CA /* c02.png in Resources */,
+				AD46E11F1BF37CB5001141CA /* d04.png in Resources */,
+				AD46E12F1BF37CB5001141CA /* h07.png in Resources */,
+				AD46E1241BF37CB5001141CA /* d09.png in Resources */,
+				AD46E1371BF37CB5001141CA /* s01.png in Resources */,
+				AD46E1121BF37CB5001141CA /* c04.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD46E0B21BF33EFC001141CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD46E0BD1BF33EFC001141CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD46E0971BF33EFC001141CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD46E0A61BF33EFC001141CA /* ViewController.m in Sources */,
+				AD46E0A31BF33EFC001141CA /* AppDelegate.m in Sources */,
+				AD46E0A01BF33EFC001141CA /* main.m in Sources */,
+				AD46E0D31BF33F31001141CA /* TrumpViewController.m in Sources */,
+				ADC400261BF8060E00D7A05F /* gameoverViewController.m in Sources */,
+				AD37A0351BF7330D0075E4B7 /* Player.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD46E0B01BF33EFC001141CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD46E0B91BF33EFC001141CA /* TrumpGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD46E0BB1BF33EFC001141CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD46E0C41BF33EFC001141CA /* TrumpGameUITests.m in Sources */,
+				ADC400271BF8276300D7A05F /* TrumpViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD46E0B61BF33EFC001141CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD46E09A1BF33EFC001141CA /* TrumpGame */;
+			targetProxy = AD46E0B51BF33EFC001141CA /* PBXContainerItemProxy */;
+		};
+		AD46E0C11BF33EFC001141CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD46E09A1BF33EFC001141CA /* TrumpGame */;
+			targetProxy = AD46E0C01BF33EFC001141CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD46E0A71BF33EFC001141CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD46E0A81BF33EFC001141CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD46E0AC1BF33EFC001141CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD46E0AD1BF33EFC001141CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD46E0C61BF33EFC001141CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AD46E0C71BF33EFC001141CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD46E0C91BF33EFD001141CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TrumpGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.group.b.TrumpGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AD46E0CA1BF33EFD001141CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TrumpGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.group.b.TrumpGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AD46E0CC1BF33EFD001141CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TrumpGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.group.b.TrumpGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrumpGame.app/TrumpGame";
+			};
+			name = Debug;
+		};
+		AD46E0CD1BF33EFD001141CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TrumpGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.group.b.TrumpGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrumpGame.app/TrumpGame";
+			};
+			name = Release;
+		};
+		AD46E0CF1BF33EFD001141CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TrumpGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.group.b.TrumpGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TrumpGame;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AD46E0D01BF33EFD001141CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TrumpGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.group.b.TrumpGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TrumpGame;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD46E0961BF33EFC001141CA /* Build configuration list for PBXProject "TrumpGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD46E0C61BF33EFC001141CA /* Debug */,
+				AD46E0C71BF33EFC001141CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD46E0C81BF33EFD001141CA /* Build configuration list for PBXNativeTarget "TrumpGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD46E0C91BF33EFD001141CA /* Debug */,
+				AD46E0CA1BF33EFD001141CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD46E0CB1BF33EFD001141CA /* Build configuration list for PBXNativeTarget "TrumpGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD46E0CC1BF33EFD001141CA /* Debug */,
+				AD46E0CD1BF33EFD001141CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD46E0CE1BF33EFD001141CA /* Build configuration list for PBXNativeTarget "TrumpGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD46E0CF1BF33EFD001141CA /* Debug */,
+				AD46E0D01BF33EFD001141CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD46E0931BF33EFC001141CA /* Project object */;
+}
