@@ -134,7 +134,7 @@
     for (int j=1; j<players.count; j++) {
         Player *pl = players[j];
         [self setCards:pl.hands handsNum:pl.handsNum];
-        pl.name =  [@"ナカムラ" stringByAppendingString:[NSString stringWithFormat:@"%d",j]];
+        pl.name =  [@"Com" stringByAppendingString:[NSString stringWithFormat:@"%d",j]];
     }
     
     [self printHand:you.hands size:you.handsNum];
@@ -320,9 +320,9 @@
 }
 
 -(void) showComsHandsNum{
-    self.com1Label.text = [NSString stringWithFormat:@"ナカムラ1の手札:%d",com.handsNum];
-    self.com2Label.text = [NSString stringWithFormat:@"ナカムラ2の手札:%d",com2.handsNum];
-    self.com3Label.text = [NSString stringWithFormat:@"ナカムラ3の手札:%d",com3.handsNum];
+    self.com1Label.text = [NSString stringWithFormat:@"Com1の手札:%d",com.handsNum];
+    self.com2Label.text = [NSString stringWithFormat:@"Com2の手札:%d",com2.handsNum];
+    self.com3Label.text = [NSString stringWithFormat:@"Com3の手札:%d",com3.handsNum];
 }
 
 - (IBAction)passBtn:(id)sender {

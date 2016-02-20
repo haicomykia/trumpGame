@@ -39,9 +39,9 @@
     }
     
     self.yourResultLabel.text = [NSString stringWithFormat:@"あなたの順位は%d位です。",rank[0]];
-    self.com1ResultLabel.text = [NSString stringWithFormat:@"ナカムラ1の順位は%d位です。",rank[1]];
-    self.com2ResultLabel.text = [NSString stringWithFormat:@"ナカムラ2の順位は%d位です。",rank[2]];
-    self.com3ResultLabel.text = [NSString stringWithFormat:@"ナカムラ3の順位は%d位です。",rank[3]];
+    self.com1ResultLabel.text = [NSString stringWithFormat:@"Com1の順位は%d位です。",rank[1]];
+    self.com2ResultLabel.text = [NSString stringWithFormat:@"Com2の順位は%d位です。",rank[2]];
+    self.com3ResultLabel.text = [NSString stringWithFormat:@"Com3の順位は%d位です。",rank[3]];
     
     for (int i=0; i<4; i++) {
         NSLog(@"%d",rankdata[i]);
