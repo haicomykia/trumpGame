@@ -181,7 +181,7 @@
 
 -(void) setCards:(NSMutableArray *)hands handsNum:(int) size{
     int cardCounter = 0;
-    while (cardCounter<size) {
+    while (cardCounter < size) {
         //乱数発生。カードは0~52の通し番号で管理する（ジョーカーはない）
         int index  = ((int)(arc4random_uniform(52)));
         if(index%13==6) continue;           //7は配らない

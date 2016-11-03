@@ -30,7 +30,7 @@
             startingLineNumber = "198"
             endingLineNumber = "198"
             landmarkName = "-printHand:size:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -56,7 +56,7 @@
             startingLineNumber = "213"
             endingLineNumber = "213"
             landmarkName = "-gameInit"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -72,7 +72,7 @@
             startingLineNumber = "230"
             endingLineNumber = "230"
             landmarkName = "-putHand:index:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -88,7 +88,7 @@
             startingLineNumber = "223"
             endingLineNumber = "223"
             landmarkName = "-showPassCnt:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -104,7 +104,7 @@
             startingLineNumber = "224"
             endingLineNumber = "224"
             landmarkName = "-showPassCnt:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -120,7 +120,7 @@
             startingLineNumber = "284"
             endingLineNumber = "284"
             landmarkName = "-putComHands"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -146,7 +146,7 @@
             startingLineNumber = "341"
             endingLineNumber = "341"
             landmarkName = "-passBtn:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -162,7 +162,7 @@
             startingLineNumber = "137"
             endingLineNumber = "137"
             landmarkName = "-viewDidLoad"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
