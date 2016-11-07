@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html ng-csp>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <script src="js/winstore-jscompat.js"></script>
+    <link rel="stylesshet" href="components/monaca-onsenui/js/angular/angular-csp.css">
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        $(document).ready(function(){
+
+        });
+    </script>
+</head>
+<body>
+    <div data-role="page" id="topPage">
+        <header data-role="header" data-position="fixed">
+            <h1>Step1:問題と評価基準の入力</h1>
+        </header>
+        <section date-role="content" class="page">
+          <h2>Step1:問題と評価基準の入力</h2>
+          <div class="form-group">
+            <label for="exampleInputEmail1">解決したい問題を入力してください</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3" name="inputProblemTextarea[0]"></textarea>
+            <small id="emailHelp" class="form-text text-muted">例：「どの自動車を購入すべきか」「A・B・Cの土地の中から、どれが最適か」</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">その問題において重視している評価基準を入力してください。（最大７つ）</label>
+            <div class="form-group row">
+              <label for="example-text-input" class="col-xs-4 col-form-label">評価基準１：</label>
+              <div class="col-xs-8">
+                <input class="form-control" type="text" value="" id="example-text-input" name="inputCriteria[0]">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="example-text-input" class="col-xs-4 col-form-label">評価基準２：</label>
+              <div class="col-xs-8">
+                <input class="form-control" type="text" value="" id="example-text-input" name="inputCriteria[1]">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="example-text-input" class="col-xs-4 col-form-label">評価基準３：</label>
+              <div class="col-xs-8">
+                <input class="form-control" type="text" value="" id="example-text-input" name="inputCriteria[2]">
+              </div>
+            </div>
+          </div>
+            <a href="#page1"><button>次へ</button></a>
+        </section>
+    </div>
+    <div data-role="page" id="page1">
+        <header data-role="header" data-position="fixed">
+            <h1>Step2:代替案の入力</h1>
+        </header>
+        <section date-role="content" class="page">
+            <h2>Step2:代替案の入力</h2>
+            <p>選択肢（代替案）を入力してください。</p>
+            <div class="form-group row">
+              <label for="example-text-input" class="col-xs-4 col-form-label">選択肢１：</label>
+              <div class="col-xs-8">
+                <input class="form-control" type="text" value="" id="example-text-input" name="inputAlternative[0]">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="example-text-input" class="col-xs-4 col-form-label">選択肢２：</label>
+              <div class="col-xs-8">
+                <input class="form-control" type="text" value="" id="example-text-input" name="inputAlternative[1]">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="example-text-input" class="col-xs-4 col-form-label">選択肢３：</label>
+              <div class="col-xs-8">
+                <input class="form-control" type="text" value="" id="example-text-input" name="inputAlternative[2]">
+              </div>
+            </div>
+            <a href="#page2"><button>次へ</button></a>
+            <a href="#topPage"><button>戻る</button></a>
+        </section>
+    </div>
+    <div data-role="page" id="page2">
+      <header data-role="header" data-position="fixed">
+          <h1>Step3:評価基準の重み付け</h1>
+      </header>
+      <section date-role="content" class="page">
+          <h2>Step3:評価基準の重み付け</h2>
+          <p>２つの評価基準を比較して重要度を決めてください</p>
+          <label for="select-weight">評価基準１は評価基準２よりどれくらい重要ですか</label>
+          <select class="custom-select">
+            <option selected>重要度を選択してください</option>
+            <option value="1">少しくらい重要</option>
+            <option value="3">少し重要</option>
+            <option value="5">かなり重要</option>
+            <option value="7">非常に重要</option>
+            <option value="9">極めて重要</option>
+          </select>
+          <label for="select-weight">評価基準１は評価基準３よりどれくらい重要ですか</label>
+          <select class="custom-select">
+            <option selected>重要度を選択してください</option>
+            <option value="1">少しくらい重要</option>
+            <option value="3">少し重要</option>
+            <option value="5">かなり重要</option>
+            <option value="7">非常に重要</option>
+            <option value="9">極めて重要</option>
+          </select>
+          <label for="select-weight">評価基準２は評価基準３よりどれくらい重要ですか</label>
+          <select class="custom-select">
+            <option selected>重要度を選択してください</option>
+            <option value="1">少しくらい重要</option>
+            <option value="3">少し重要</option>
+            <option value="5">かなり重要</option>
+            <option value="7">非常に重要</option>
+            <option value="9">極めて重要</option>
+          </select>
+          <a href="#page3"><button>次へ</button></a>
+          <a href="#page1"><button>戻る</button></a>
+      </section>
+    </div>
+    <div data-role="page" id="page3">
+      <header data-role="header" data-position="fixed">
+          <h1>AHP App</h1>
+      </header>
+      <section date-role="content" class="page">
+          <h2>Page4</h2>
+          <label for="select-weight">代替案１は代替案２よりどれくらい重要ですか</label>
+          <select class="custom-select">
+            <option selected>重要度を選択してください</option>
+            <option value="1">少しくらい重要</option>
+            <option value="3">少し重要</option>
+            <option value="5">かなり重要</option>
+            <option value="7">非常に重要</option>
+            <option value="9">極めて重要</option>
+          </select>
+          <label for="select-weight">代替案１は代替案３よりどれくらい重要ですか</label>
+          <select class="custom-select">
+            <option selected>重要度を選択してください</option>
+            <option value="1">少しくらい重要</option>
+            <option value="3">少し重要</option>
+            <option value="5">かなり重要</option>
+            <option value="7">非常に重要</option>
+            <option value="9">極めて重要</option>
+          </select>
+          <label for="select-weight">代替案２は代替案３よりどれくらい重要ですか</label>
+          <select class="custom-select">
+            <option selected>重要度を選択してください</option>
+            <option value="1">少しくらい重要</option>
+            <option value="3">少し重要</option>
+            <option value="5">かなり重要</option>
+            <option value="7">非常に重要</option>
+            <option value="9">極めて重要</option>
+          </select>
+          <a href="#page4"><button>次へ</button></a>
+          <a href="#page2"><button>戻る</button></a>
+      </section>
+    </div>
+    <div data-role="page" id="page4">
+      <header data-role="header" data-position="fixed">
+          <a href="" data-rel="back">戻る</a>
+          <h1>AHP App</h1>
+      </header>
+      <section date-role="content" class="page">
+          <h2>Page5</h2>
+          <section id="criteria">
+            <h3>評価基準</h3>
+            <p><span class="compare"></span><span class="selectedScale"></span></p>
+            <p><span class="compare"></span><span class="selectedScale"></span></p>
+            <p><span class="compare"></span><span class="selectedScale"></span></p>
+          </section>
+          <section id="alternative">
+            <h3>代替案</h3>
+            <p><span class="compare"></span><span class="selectedScale"></span></p>
+            <p><span class="compare"></span><span class="selectedScale"></span></p>
+            <p><span class="compare"></span><span class="selectedScale"></span></p>
+          </section>
+          <a href="#lastPage"><button>次へ</button></a>
+          <a href="#page3"><button>戻る</button></a>
+      </section>
+    </div>
+    <div data-role="page" id="lastPage">
+      <header data-role="header" data-position="fixed">
+          <a href="" data-rel="back">戻る</a>
+          <h1>AHP App</h1>
+      </header>
+      <section date-role="content" class="page">
+          <h2>Last Page</h2>
+          <h3>最も適した選択は...</h3>
+          <p class="result"></p>
+          <p>２番目に<span class="other-result"></span></p>
+          <p>３番目に<span class="other-result"></span></p>
+          <a href="#topPage"><button>やり直す</button></a>
+      </section>
+    </div>
+</body>
+</html>
